@@ -1,1 +1,14 @@
-##What if there are no Kubernetes Services?
+##Why Kubernetes Services are needed
+
+In Kubernetes, applications run inside Pods.
+However, Pods are ephemeral:
+
+They can be recreated
+
+Their IP addresses can change
+
+Multiple Pods can exist for the same application
+
+Because of this, directly communicating with Pods is unreliable.
+
+Kubernetes Services provide a stable and reliable way to expose and access Pods.
